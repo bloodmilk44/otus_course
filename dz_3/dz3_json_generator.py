@@ -34,9 +34,10 @@ for name in data_list:
                                     'Author' : author_list.pop(),
                                     'Height' : height_list.pop()}]}, indent=4)
 
+    with open("../files/example.json", "w") as g:
+        for row in result:
+            print(result)
+            g.write(result)
 
-    print(result)
-    #print(json.dumps(result))
-    #with open("../files/example.json", "w") as g:
-    #    json.dump(result, g, indent=4)
+
 
