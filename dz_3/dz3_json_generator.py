@@ -8,11 +8,11 @@ with open('../files/books2.csv', newline='') as b:
     title_list = []
 
     for row in reader:
-        test = {}
-        test['Title'] = str(row['Title'])
-        test['Author'] = str(row['Author'])
-        test['Height'] = str(row['Height'])
-        title_list.append(test)
+        book_list = {}
+        book_list['Title'] = str(row['Title'])
+        book_list['Author'] = str(row['Author'])
+        book_list['Height'] = str(row['Height'])
+        title_list.append(book_list)
 
 with open("../files/users.json", "r") as f:
     data_list = json.loads(f.read())
